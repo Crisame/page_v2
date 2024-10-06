@@ -1,0 +1,51 @@
+
+
+body {
+    background-color: rgb(255, 217, 0);
+    height: 100vh; /* Asegura que el cuerpo tome toda la altura de la ventana */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes */
+}
+
+section {
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px;
+    text-align: center;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Contenedor centrado con margen automático */
+.contenedor {
+    width: 90%;
+    max-width: 800px; /* Limita el tamaño máximo para pantallas grandes */
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contenedor:hover {
+    transform: scale(1.05); /* Efecto hover para resaltar */
+}
+
+/* Animación de entrada */
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+.viendo_en_vivo {
+    width: 100%;
+    height: auto;
+}
